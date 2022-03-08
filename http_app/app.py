@@ -27,6 +27,7 @@ def init_app():
         app.logger.debug(request.path)
         return({"message": "Hello, World"})
     else:
+        app.logger.debug(request.path)
         return('<p>Hello, World</p>')
   return app
 

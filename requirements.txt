@@ -1,2 +1,4 @@
-Flask==2.0.3
-pytest==6.2.4
+Flask
+pytest
+logging
+requests
