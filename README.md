@@ -38,6 +38,7 @@ Sample log
 ## pytest
 
 ```
-$ cd http_app
 $ pytest
+# for code coverage
+$ python3 -m pytest --cov-report term-missing --cov=.
 ```
