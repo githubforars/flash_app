@@ -35,6 +35,19 @@ Sample log
 2022-03-08 16:14:03,919  Request-URI: /
 ```
 
+## Test
+```
+#get-json-response
+curl -XGET  -H "Accept: application/json" http://localhost:5000/
+#get
+curl -XGET  http://localhost:5000/
+# post
+curl -XPOST http://localhost:5000/
+curl -XPOST  -H "Accept: application/json" http://localhost:5000/
+curl -XPUT  http://localhost:5000/ --> should see method not allowed
+```
+
+
 ## pytest
 
 ```
