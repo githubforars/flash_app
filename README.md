@@ -6,10 +6,8 @@ This Flask application contains the basic  get and port demonstration with pytes
 
 
 ```
-http_app/
-        /app.py
-tests/
-     /test_get_post.py
+http_app/app.py
+tests/test_get_post.py
 README
 requirement.txt
 ```
@@ -17,20 +15,29 @@ requirement.txt
 ## Installation
 Install the python packages specified in requirements.txt:
 
-```sh
+```
 $ pips install -r requirements.txt
 ```
 
 ## Run 
 
-```sh
+```
 $ python3 http_app/app.py
 ```
-
+# Debug mode
+```
+$ python3 http_app/app.py -d
+$ python3 http_app/app.py --debug
+```
+Sample log
+```
+2022-03-08 16:13:59,125  Request-URI: /testpath
+2022-03-08 16:14:03,919  Request-URI: /
+```
 
 ## pytest
 
-```sh
+```
 $ cd http_app
 $ pytest
 ```
