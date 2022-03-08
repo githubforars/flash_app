@@ -22,9 +22,8 @@ def arg_parser():
 def init_app():
   app = Flask(__name__)
   @app.route('/', defaults={'path': ''},methods=['GET','POST'])
-  @app.route('/<path:path>',methods=['GET','POST'])
   def echo(path):
-    if request.headers.get('Accept') == 'application/json':
+    if request.method == 'GET' and request.headers.get('Accept') == 'application/json':
         app.logger.debug(request.path)
         return({"message": "Hello, World"})
     else:

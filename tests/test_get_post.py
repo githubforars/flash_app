@@ -27,4 +27,4 @@ def test_simple_post(client):
 
 def test_json_post(client):
     rv = client.post("/",headers={"Accept": "application/json"})
-    assert b'{"message":"Hello, World"}\n' == rv.data
+    assert b'<p>Hello, World</p>' == rv.data
