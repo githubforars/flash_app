@@ -37,6 +37,8 @@ Sample log
 
 ## Test
 ```
+run from different terminal
+
 #get-json-response
 curl -XGET  -H "Accept: application/json" http://localhost:5000/
 #get
