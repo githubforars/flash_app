@@ -4,6 +4,7 @@ This Flask application contains the basic  get and port demonstration with pytes
 
 ## App structure
 
+NOTE: This app is created under python3.9
 
 ```
 http_app/app.py
